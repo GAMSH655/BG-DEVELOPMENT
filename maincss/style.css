@@ -243,7 +243,8 @@ header a{
       header ul {
          display:none;
          list-style: none;
-         background-color:hotpink;
+         background-color:beige;
+         color: black;
          margin-top: 190px;
          width: 150px;
          text-align: center;
