@@ -53,13 +53,17 @@ header a{
     padding: 7px;
   }
     #bar-btn {
-   
       border-radius: 10px;
       width: 100px;
       transition: 0.5s ease-in-out;
       padding: 7px;
       display: none;
     }
+    .cancelbtn {
+      display: none;
+    }
+    
+
   /********   main page *******/
    main{
          background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) , rgba(0,0,0,0.5) ) , url(../Asset/duplx.jpg);
@@ -212,9 +216,6 @@ header a{
       button {
           margin-left: -140px;
       }
-       nav {
-           display: none;
-      }
       #bar-btn {
            display: block;
            width: 200px;
@@ -225,6 +226,37 @@ header a{
       }
       .btn-cont{
            display: none;
+      }
+      .cancelbtn{
+          width: 60px;
+          font-size: xx-large;
+          font-size: bolder;
+          position: relative;
+          left: 220px;
+          top: 5px;
+          border-radius: 5px;
+          background-color: transparent;
+          border: none;
+          color: red;
+          display: block;
+     }
+      header ul {
+         display:none;
+         list-style: none;
+         background-color:hotpink;
+         margin-top: 190px;
+         width: 150px;
+         text-align: center;
+         border-radius: 9px;
+         position: absolute;
+         z-index: 1;
+         bottom: 400px;
+         right: 55px;
+        
+      }
+      header li {
+           border-bottom: 1.5px white solid;
+           color: white;
       }
      }
   
