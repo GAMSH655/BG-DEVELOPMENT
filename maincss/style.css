@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:  99px;
+    background-color:  rgba(216, 202, 187, 0.815);
+    min-width: 500px;
+}
+header ul {
+   display: flex;
+   list-style: none;
+}
+header li {
+   padding: 10px;
+}
+.logo-text {
+    color: blue;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: larger;
+}
+ button:hover{
+    color: navy;
+    background-color: wheat;
+    border-radius: 0.5rem;
+ }
+ a:hover {
+   color: navy;
+   border-bottom: 0.5px black solid;
+    height: 80px;
+    width: 40px;
+    height: 2rem;
+    transition: 0.5s all ease-in-out;
+ }
+  .btn-cont{
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    width: 100px;
+    transition: 0.5s ease-in-out;
+    padding: 7px;
+  }
+    #bar-btn {
+   
+      border-radius: 10px;
+      width: 100px;
+      transition: 0.5s ease-in-out;
+      padding: 7px;
+      display: none;
+    }
+  /********   main page *******/
+   main{
+         background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) , rgba(0,0,0,0.5) ) , url(../Asset/duplx.jpg);
+         background-repeat: no-repeat;
+         background-position: left;
+         background-size: cover;
+          background-attachment: fixed;
+          height: 450px;
+          min-width: 500px;
+   }
+       main .advert-text  , h2{
+         color: white;
+         font-weight: bolder;f
+         font-size: xx-large;
+         text-transform:capitalize;
+        padding:50px;
+   }
+   .span-1 , span {
+         color: dodgerblue;
+   }
+    .dummy-text  {
+           color: white;
+           font-size: medium;
+           font-weight:  bold;
+           margin: 50px;
+           margin-top: -20px;
+    }
+    input {
+     background-color: whitesmoke;
+     margin: 10px;
+      margin: 50px;
+      margin-top: -20px;
+      width: 250px;
+      height: 30px;
+      border-radius: 3rem;
+      text-align: center;
+   }
+   /*** number - text ***/
+    .number-texts {
+           display: flex;
+           justify-content: space-evenly;
+           margin-top: -15px;
+           /* background-color: red; */
+           animation-name: number-texts;
+           animation-duration: 0.1s;
+           animation-delay: 0.2s;
+           animation-timing-function: ease-in-out;
+           /* animation-iteration-count: 10; */
+    }
+      @keyframes  number-texts {
+        0% {
+         opacity: 0;  
+         display: none; 
+        }
+        100%{
+             opacity: 1;
+              transform: translateX(50px);
+        }
+      }
+    h1{
+     color: white;
+     text-transform: capitalize;
+    }
+     h2{
+          color:black;
+          margin-top: -20px;
+     }
+
+     /**** image - adverts ****/
+     .image-adverts{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           text-align: center;
+     }
+      
+     
+     img{
+          width: 300px;
+          height: 300px;
+          margin: 1em;
+          border-radius: 1em;
+          border-top: black 5px solid;
+          border-bottom: black 5px solid;
+     }
+     .choice {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin: 100px;
+          flex-direction: row-reverse;
+     }
+     .image-5{
+         margin-left: auto;
+           width: 400px;
+           height: 300px;
+           
+     }
+     .blue-text{
+           text-transform: uppercase;
+           font-size: 1.3rem;
+           font-weight:  bolder;
+     }
+     .all-text{
+          font-weight: bold;
+          font-size: large;
+     }
+
+     /***** contact - us ****/
+      .cont-us{
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+      }
+    .cont-text{
+          color:  dodgerblue;
+          text-align: center;
+
+    }
+    .image-cont{
+         margin-bottom: 100px;  
+         width: 23rem;
+         height: 23rem;
+    }
+  form{
+    margin-top: 50px;
+  }
+    .form-cont {
+           box-shadow:  5px 0 0  0.9px rgba(0,0,0,0.5);
+           height: 450px;
+    }
+    .submit-btn {
+           color: white;
+           background-color: dodgerblue;
+           border-radius: 10px;
+           width: 100px;
+            margin-left: 140px;
+            font-weight: bolder;
+            font-size: medium;
+            padding: 5px;
+    }
+
+  @media only screen and (max-width:768px) {
+     body {
+          font-size: small
+     };
+      header {
+          width:auto;
+      }
+      button {
+          margin-left: -140px;
+      }
+       nav {
+           display: none;
+      }
+      #bar-btn {
+           display: block;
+           width: 200px;
+           padding: 10px;
+           border-radius: 15px;
+           border:none;
+           background-color: transparent;
+      }
+      .btn-cont{
+           display: none;
+      }
+     }
+  
