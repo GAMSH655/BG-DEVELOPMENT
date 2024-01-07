@@ -256,7 +256,7 @@ header a{
      animation-duration: 2s;
 }
 @keyframes slidein {
-      0%{transform:translateX(-50%);}
+      0%{transform:translateX(60%);}
 } 
       header li {
            border-bottom: 1.5px white solid;
